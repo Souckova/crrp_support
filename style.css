@@ -1,0 +1,44 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #322F35;
+    color: white;
+    gap: 4px;
+    align-items: center;
+    border-radius: 4px; 
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    box-shadow: 0 1px 3px 0 #00000055, 0 4px 8px 3px #00000026;
+}
+
+.headerNav {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#icon{
+    height: 50px;
+    width: auto;
+}
+
+#crrpSupport{
+    font-weight: bold;
+}
+
+#author{
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+}
