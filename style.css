@@ -1,6 +1,11 @@
+:root {
+    --gray:  #322F35;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 header{
     position: fixed;
     left: 50%;
@@ -10,7 +15,7 @@ header{
 nav{
     display: flex;
     justify-content: center;
-    background-color: #322F35;
+    background-color:var(--gray);
     color: white;
     gap: 4px;
     align-items: center;
@@ -37,8 +42,20 @@ nav{
     font-weight: bold;
 }
 
-#author{
+#author p{
     color: gray;
     text-align: center;
     margin-top: 50px;
+}
+
+#author div{
+    background-color:var(--gray);
+    border: 30px;
+    border-radius: 4px;
+}
+#author div img{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
