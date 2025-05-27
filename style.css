@@ -95,8 +95,8 @@ ol{
 li{
     display: block;
 }
-
-li:before{
+/*problém pak ul li, předělat na class*/
+ol > li:before{
     content: counters(item, ".") " ";
     counter-increment: item;
 }
