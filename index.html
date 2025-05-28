@@ -41,7 +41,7 @@
     </div>
 
     <section>
-      <div id="left-panel">
+      <div id="left-panel" class="fixed">
         <div id="left-panel-header">
             <h1>CRRP SUPPORT</h1>
             <button onclick="hide()">X</button>
@@ -95,13 +95,17 @@
         </ol>
         <hr />
       </div>
-      <button id="show" onclick="show()">></button>
+      <div id="show" onclick="show()" class="fixed">
+        <span onclick="show()">></span>
+      </div>
+      
 
       <div id="right-pannel">
         <ol>
         <li>
           - Commands /me, /do
           <ol>
+
             <li>
               /me
               <!-- copy /me [action] -->
@@ -123,26 +127,48 @@
                 </li>
               </ul>
             </li>
-            <li>/do</li>
+
+            <li>/do
+              <!-- copy /do [description of the situation] -->
+              <ul>
+                <li>
+                  Purpose: Used to describe external circumstances, emotions, states or outcomes that may not be directly apparent from the game mechanics.
+                </li>
+                <li>
+                  Display: [DO] A knife would have been found in the pocket.
+                </li>
+                <li>Example of use:
+                  <ul>
+                    <li>
+                      /do He would be holding a police officer's badge in his hand
+                    </li>
+                    <li>
+                      /do There would be a broken phone on the table.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
           </ol>
         </li>
+
         <li>
           - RP Animations
           <ol>
-            <li>Animations</li>
+            <li>Animations
+              
+            </li>
           </ol>
         </li>
       </ol>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
       <!-- 
-1.2 / do
-/do [description of the situation] 
-Purpose: Used to describe external circumstances, emotions, states or outcomes that may not be directly apparent from the game mechanics.
-Display:
-[DO] A knife would have been found in the pocket.
-Example of use:
-/do He would be holding a police officer's badge in his hand.
-/do There would be a broken phone on the table.
 2 - Animations
 2.1 Animations
 Our game also offers the possibility of animations, these animations can be activated in the top menu. After pressing the button for animations. A window will open. Here you can click on the animation you currently want to perform. To end it, click on the button again. -->
@@ -161,7 +187,7 @@ Our game also offers the possibility of animations, these animations can be acti
 
       function hide() {
         document.getElementById("left-panel").style.display = "none";
-        document.getElementById("show").style.display = "block";
+        document.getElementById("show").style.display = "flex";
       }
     </script>
   </body>

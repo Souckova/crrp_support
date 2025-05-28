@@ -53,6 +53,13 @@ nav{
 }
 
 /*--------------------*/
+.fixed {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  left: 10px;
+  top: 40px;
+}
 
 section{
     display: flex;
@@ -96,6 +103,31 @@ section{
     display: flex;
     gap: 10px;
 }
+
+#show{
+    background-color: none;
+    padding-left: 20px;
+    padding-right: 10px;
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+    margin-left: 0;
+    transition: margin-left ease 0.5s;
+}
+
+#show:hover {
+    margin-left: 15px;
+}
+
+#show > span{
+    background-color: var(--gray);
+    border-radius: 12px; 
+    color: white;
+    padding: 10px;
+}
+
 
 hr{
     border: 1px solid white;
@@ -160,3 +192,11 @@ ol > li:before{
     margin: 0;
     text-wrap: balance;
 }
+
+/*right side*/
+/*#right-pannel { /*pravu to chce, není to respozivní, při menším rozlišení se překrývá s left side a rozbíjito sticky pro šipku a leftside*/
+  /*position: absolute;
+  top: 35%;
+  left: 25%;
+  width: fit-content;
+}*/
