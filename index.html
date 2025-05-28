@@ -1,106 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Support</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="./index.html"><img id="icon" src="./img/icon.png" alt="logo"></a>
-            <a class="headerNav" id="crrpSupport" href="">CRRP SUPPORT</a>
-            <span class="headerNav">/</span>
-            <a class="headerNav" href="">GAME</a>
-            <span class="headerNav">/</span>
-            <a class="headerNav" href="">PLAYER COMMAND AND RP INTERACTIONS</a>
-        </nav>
+      <nav>
+        <a href="./index.html"
+          ><img id="icon" src="./img/icon.png" alt="logo"
+        /></a>
+        <a class="headerNav" id="crrpSupport" href="">CRRP SUPPORT</a>
+        <span class="headerNav">/</span>
+        <a class="headerNav" href="">GAME</a>
+        <span class="headerNav">/</span>
+        <a class="headerNav" href="">PLAYER COMMAND AND RP INTERACTIONS</a>
+      </nav>
     </header>
     <div id="author">
-        <p>AUTOR:</p>
+      <p>AUTOR:</p>
+      <div>
+        <img src="./img/profile.png" alt="profile picture" />
         <div>
-            <img src="./img/profile.png" alt="profile picture">
-            <div>
-                <h2>PinFool</h2>
-                <p id="authorP">Jsem studentka 3. ročníku střední školy a moje zaměření je právě vývoj webových stránek. Mám dlouhodobou zkušenost jak s HTML a CSS tak i PHP a databázemi přes MySQL. </p>
-            </div>
+          <h2>PinFool</h2>
+          <p id="author-p">
+            Jsem studentka 3. ročníku střední školy a moje zaměření je právě
+            vývoj webových stránek. Mám dlouhodobou zkušenost jak s HTML a CSS
+            tak i PHP a databázemi přes MySQL.
+          </p>
         </div>
+      </div>
     </div>
 
     <section>
-        <div id="left-panel">
+      <div id="left-panel">
+        <div id="left-panel-header">
             <h1>CRRP SUPPORT</h1>
-            <div id="arrows">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                </svg>
-                <div id="pages">
-                    <p>1</p>
-                    <p>/</p>
-                    <p>52</p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                </svg>
-            </div>
-            <hr>
-            <ol>
-                <li>- Commands /me, /do
-                    <ol>
-                        <li>/me</li>
-                        <li>/do</li>
-                    </ol>
-                </li>
-                <li>- RP Animations
-                    <ol>
-                        <li>Animations</li>
-                    </ol>
-                </li>
-            </ol>
-            <hr>
+            <button onclick="hide()">X</button>
         </div>
-
+        <div id="arrows">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-caret-left-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+            />
+          </svg>
+          <div id="pages">
+            <p>1</p>
+            <p>/</p>
+            <p>52</p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-caret-right-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </div>
+        <hr />
         <ol>
-            <li>- Commands /me, /do
-                <ol>
-                    <li>/me
-                        <!-- copy /me [action] -->
-                            <ul>
-                            <li>Purpose: It is used to describe what a character is doing or how they are behaving.</li>
-                            <li>Display: Martin_Novak lighting a cigarette.</li>
-                            <li>Example usage:
-                                <ul>
-                                    <li>/me pulls an ID card out of his pocket and hands it to the police officer.</li>
-                                    <li>/me frowns and takes a step back.</li>
-                                </ul>
-                            </li>
-                            </ul>
-                    </li>
-                    <li>/do</li>
-                </ol>
-            </li>
-            <li>- RP Animations
-                <ol>
-                    <li>Animations</li>
-                </ol>
-            </li>
+          <li>
+            - Commands /me, /do
+            <ol>
+              <li>/me</li>
+              <li>/do</li>
+            </ol>
+          </li>
+          <li>
+            - RP Animations
+            <ol>
+              <li>Animations</li>
+            </ol>
+          </li>
         </ol>
+        <hr />
+      </div>
+      <button id="show" onclick="show()">></button>
 
+      <div id="right-pannel">
+        <ol>
+        <li>
+          - Commands /me, /do
+          <ol>
+            <li>
+              /me
+              <!-- copy /me [action] -->
+              <ul>
+                <li>
+                  Purpose: It is used to describe what a character is doing or
+                  how they are behaving.
+                </li>
+                <li>Display: Martin_Novak lighting a cigarette.</li>
+                <li>
+                  Example usage:
+                  <ul>
+                    <li>
+                      /me pulls an ID card out of his pocket and hands it to the
+                      police officer.
+                    </li>
+                    <li>/me frowns and takes a step back.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>/do</li>
+          </ol>
+        </li>
+        <li>
+          - RP Animations
+          <ol>
+            <li>Animations</li>
+          </ol>
+        </li>
+      </ol>
 
-
-<!-- Display:
-Martin_Novak lighting a cigarette.
-
-Example usage:
-
-/me pulls an ID card out of his pocket and hands it to the police officer.
-
-/me frowns and takes a step back.
+      <!-- 
 1.2 / do
 /do [description of the situation] 
 Purpose: Used to describe external circumstances, emotions, states or outcomes that may not be directly apparent from the game mechanics.
@@ -112,8 +146,23 @@ Example of use:
 2 - Animations
 2.1 Animations
 Our game also offers the possibility of animations, these animations can be activated in the top menu. After pressing the button for animations. A window will open. Here you can click on the animation you currently want to perform. To end it, click on the button again. -->
+
+      </div>
+
+      
     </section>
     <footer></footer>
-</body>
 
+    <script>
+      function show() {
+        document.getElementById("left-panel").style.display = "block";
+        document.getElementById("show").style.display = "none";
+      }
+
+      function hide() {
+        document.getElementById("left-panel").style.display = "none";
+        document.getElementById("show").style.display = "block";
+      }
+    </script>
+  </body>
 </html>

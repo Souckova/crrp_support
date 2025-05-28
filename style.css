@@ -40,7 +40,7 @@ nav{
     text-decoration: none;
     color: white;
     font-size: 25px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 #icon{
@@ -68,7 +68,21 @@ section{
     padding-right: 30px;
     text-align: center;
     position: sticky;
+    display: none;
 }
+
+#left-panel-header{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+
+#left-panel-header > button{
+    margin: 20px;
+    margin-right: 0;
+    height: fit-content;
+}
+
 
 #arrows{
     display: flex;
@@ -142,7 +156,7 @@ ol > li:before{
     margin: 0;
 }
 
-#authorP{
+#author-p{
     margin: 0;
     text-wrap: balance;
 }
