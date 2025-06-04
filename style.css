@@ -114,11 +114,11 @@ section{
     position: sticky;
 
     margin-left: 0;
-    transition: margin-left ease 0.5s;
+    transition: left ease 0.5s;
 }
 
 #show:hover {
-    margin-left: 15px;
+    left: 15px;
 }
 
 #show > span{
@@ -133,18 +133,28 @@ hr{
     border: 1px solid white;
 }
 
-ol{
-    counter-reset: item;
-    padding: 0;
+ol {
+    counter-reset: section;
+    list-style: none;
+    padding-left: 0;
 }
 
-li{
-    display: block;
+ol > li {
+    counter-increment: section;
 }
-/*problém pak ul li, předělat na class*/
-ol > li:before{
-    content: counters(item, ".") " ";
-    counter-increment: item;
+
+ol > li::before {
+    content: counters(section, ".") " ";
+    margin-right: 5px;
+}
+
+ol ol {
+    margin-left: 25px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-top: 5px;
 }
 
 /*autor část*/
@@ -194,9 +204,16 @@ ol > li:before{
 }
 
 /*right side*/
-/*#right-pannel { /*pravu to chce, není to respozivní, při menším rozlišení se překrývá s left side a rozbíjito sticky pro šipku a leftside*/
-  /*position: absolute;
-  top: 35%;
-  left: 25%;
-  width: fit-content;
-}*/
+#right-panel {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(128, 0, 0);
+  padding: 10px;
+}
+
+#right-panel-animations {
+    display: flex;
+}
+
+
+/*pravá část se posouvá s levou*/
